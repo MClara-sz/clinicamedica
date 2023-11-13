@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="pt-br">
+       <title>Medical Clinic B3000</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <style>
+          
+          h2{
+
+         text-align: left;   
+          }
+         div {
+
+           text-align: center;
+           margin-bottom: 50%;
+            
+            }
+            body {
+                background-image: url(./img.home.png);
+            }
+            #relogio {
+            text-align:center;
+            font-size: 50px;
+            color: red;
+        }
+    </style>
+    <body>
+        <div class="container"> 
+            <h1>Home</h1>   
+            <p></p> 
+
+            <h2 style="text-align:center;">
+                 
+                 <ul >
+                    <h2>Agendar consulta</h2>
+                    <a href="agendar consulta.html"><li></li></a>
+                    <h2>Sobre</h2>
+                    <a href="sobre.html"><li></li></a>
+                 </ul>
+                <!-- https://img.freepik.com/free-photo/background_53876-32171.jpg?w=2000-->
+        <p></p>
+            <section>
+               
+              </section>
+    </body>
+    <footer>
+
+    </footer>
+    </html>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Relógio</title>
+  <script>
+    function atualizarRelogio() {
+      var dataAtual = new Date();
+      var horas = dataAtual.getHours();
+      var minutos = dataAtual.getMinutes();
+      var segundos = dataAtual.getSeconds();
+      
+      // Formatação para exibir sempre dois dígitos
+      if (horas < 10) horas = "0" + horas;
+      if (minutos < 10) minutos = "0" + minutos;
+      if (segundos < 10) segundos = "0" + segundos;
+      
+      // Exibe o horário atual no elemento com o ID 'relogio'
+      document.getElementById('relogio').innerHTML = horas + ":" + minutos + ":" + segundos;
+    }
+    
+    // Atualiza o relógio a cada segundo
+    setInterval(atualizarRelogio, 1000);
+  </script>
+</head>
+<body>
+  <h1>Relógio</h1>
+  <div id="relogio"></div>
+</body>
+</html>
